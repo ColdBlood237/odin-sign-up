@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign-up form</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <script src="app.js" defer></script>
     </head>
 
     <body>
@@ -24,16 +25,18 @@
 
             <div class="right-side">
 
-                <p>
-                    This is not a real online service! You know you need something like this in your life to help you
-                    realize your deepest dreams.<br>
-                    Sign up now to get started.
-                </p>
-                <p>
-                    You <em>know</em> you want to.
-                </p>
+                <div class="intro-message">
+                    <p>
+                        This is not a real online service! You know you need something<br>
+                        like this in your life to help you realize your deepest dreams.<br>
+                        Sign up now to get started.
+                    </p>
+                    <p>
+                        You <em>know</em> you want to.
+                    </p>
+                </div>
 
-                <div>
+                <div class="form-container">
 
                     <h2>Let's do this!</h2>
 
@@ -41,27 +44,28 @@
 
                         <div>
                             <label for="first-name">FIRST NAME</label>
-                            <input id="first-name" type="text" name="first-name">
+                            <input id="first-name" type="text" name="first-name" required>
                         </div>
                         <div>
                             <label for="last-name">LAST NAME</label>
-                            <input id="last-name" type="text" name="last-name">
+                            <input id="last-name" type="text" name="last-name" required>
                         </div>
                         <div>
                             <label for="email">EMAIL</label>
-                            <input id="email" type="email" name="email">
+                            <input id="email" type="email" name="email" required>
                         </div>
                         <div>
                             <label for="phone-nbr">PHONE NUMBER</label>
-                            <input id="phone-nbr" type="tel" name="phone-nbr">
+                            <input id="phone-nbr" type="tel" name="phone-nbr" required>
                         </div>
-                        <div>
+                        <div class="pwd-container">
                             <label for="password">PASSWORD</label>
-                            <input id="password" type="password" name="password">
+                            <input class="error" id="password" type="password" name="password" required>
+                            <p class="dont-match">*Passwords do not match</p>
                         </div>
                         <div>
                             <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                            <input id="confirm-pwd" type="password" name="confirm-pwd">
+                            <input class="error" id="confirm-pwd" type="password" name="confirm-pwd" required>
                         </div>
 
                     </form>
@@ -69,7 +73,7 @@
                 </div>
 
                 <button type="submit" form="sign-up-form">Create Account</button>
-                <p>Already have an account? <a class="login" href="">Log in</a> </p>
+                <p class="login-text"><strong>Already have an account? <a class="login" href="">Log in</a></strong></p>
 
             </div>
 

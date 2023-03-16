@@ -10,6 +10,7 @@
 body {
     margin: 0;
     height: 100vh;
+    font-family: sans-serif;
 }
 
 .flex-container {
@@ -54,4 +55,77 @@ body {
     text-align: center;
 }
 
-.right-side {}
+.right-side {
+    padding: 100px 0;
+    flex: 1;
+    background-color: #f6f6f6;
+}
+
+.intro-message {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0 64px;
+}
+
+.form-container {
+    background-color: white;
+    border: solid white;
+    box-shadow: 0px 5px 5px 0px rgba(196, 194, 196, 1);
+    margin: 32px 0;
+    padding: 0px 64px 42px 64px;
+}
+
+#sign-up-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+}
+
+input {
+    width: 400px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #85cdfa;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.37);
+}
+
+.error {
+    border: 2px solid #ff0000;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-text a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+.dont-match {
+    color: red;
+    margin: 0;
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: #596D48;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 7px;
+    border: 0;
+    margin-left: 64px;
+    cursor: pointer;
+}
+
+.login-text {
+    margin-left: 64px;
+}
